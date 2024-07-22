@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppFullScreenTheme"
+        tools:targetApi="31">
+        <activity
+            android:name="siva.carrental.agency.demo.core.customer.ui.CustomerInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.customer.ui.CustomerForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.customer.ui.CustomerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.customer.ui.CustomerRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.carowner.ui.OwnerRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.carowner.ui.CustomerDetailsListActivity"
+            android:exported="false" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.carowner.ui.ResetOwnerPasswordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_forgot_password_login" />
+        <activity
+            android:name="siva.carrental.agency.demo.core.carowner.ui.OwnerLoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_owner_login" />
+        <activity
+            android:name="siva.carrental.agency.demo.launcher.WelcomeCarAgencyActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="siva.carrental.agency.demo.notification.AlertMessageNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="siva.carrental.agency.demo.services.CarRunningForegroundService" />
+    </application>
+
+</manifest>

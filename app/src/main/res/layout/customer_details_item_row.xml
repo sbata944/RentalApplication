@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@android:color/holo_red_dark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/id_name_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/crossed_limit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="User ID ---User Name -- User Gender"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/crossed_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:text="Yes"/>
+        <TextView
+            android:id="@+id/model_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Car Model - Speed Limit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

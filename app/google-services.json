@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881113327871",
+    "project_id": "carrentalservice-faa64",
+    "storage_bucket": "carrentalservice-faa64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881113327871:android:6292cf113429854dd6c4ca",
+        "android_client_info": {
+          "package_name": "siva.android.car.agency"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-idED1XyA9ujyrWhU1Vbffu_1b0ROauI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
